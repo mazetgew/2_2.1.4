@@ -2,8 +2,10 @@ package app;
 
 import app.config.AppConfig;
 import app.model.AnimalsCage;
+import app.model.Dog;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
 
 public class Application {
 
@@ -14,7 +16,8 @@ public class Application {
             AnimalsCage bean =
                     applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();
+            System.out.println("Время в мэйне: ");
+            bean.getTimeMain();
         }
     }
-
 }
