@@ -20,13 +20,11 @@ public class AnimalsCage {
         System.out.println("Say:");
         System.out.println(animal.toString());
         System.out.println("At:");
-        System.out.println(new Timer().getTime());
+        System.out.println(timer.getTime());
         System.out.println("________________________");
     }
 
-    public void getTimeMain() {
-        System.out.println(timer.getTime());
-    }
+    @Bean
     public Timer getTimer() {
         return timer;
     }

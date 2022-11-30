@@ -17,7 +17,7 @@ public class Application {
                     applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();
             System.out.println("Время в мэйне: ");
-            bean.getTimeMain();
+            System.out.println(bean.getTimer().getTime());
         }
     }
 }
