@@ -11,7 +11,9 @@ public class AnimalsCage {
     @Autowired
     @Qualifier("dog")
     private Animal animal;
-    private Timer timer = new Timer();
+    @Autowired
+    @Qualifier("timer")
+    Timer timer;
 
     public AnimalsCage() {
     }
